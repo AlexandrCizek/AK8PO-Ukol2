@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv4kwifv108lb"]
+
+[ext_resource type="Texture2D" uid="uid://cv2p6wc5vx64s" path="res://apple.webp" id="1_hx5bk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k7wwt"]
+radius = 12.1655
+
+[node name="Food" type="Area2D" groups=["food"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(0.127694, 0.127694)
+texture = ExtResource("1_hx5bk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_k7wwt")

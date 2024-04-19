@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c171ht7xal3ct"]
+
+[ext_resource type="Texture2D" uid="uid://d2vvdqi78pdf4" path="res://snake_body.png" id="1_ekpkh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pj4r"]
+size = Vector2(72, 72)
+
+[node name="Snake" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_ekpkh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6pj4r")
